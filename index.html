@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inversiones</title>
+</head>
+
+<body>
+    <h2>Este es el enlace de la calculadora que te mostré hoy: <a href="https://hernan-reiq.github.io/calculadora-inversiones/
+        " target="_blank" rel="noopener noreferrer"> https://hernan-reiq.github.io/calculadora-inversiones/
+        </a></h2>
+
+    <p>
+    <ul>
+        <li>Debes crear un prompt por los primeros 4 campos (Inversion inicial, Interes anual, Interes capitalizable?,
+            cantidad de meses)</li>
+
+        <li>
+
+            Los otros 2 campos deben ser obviados (cada cuantos meses piensa reinvertir? y cuanto piensa reinvertir?)
+        </li>
+    </ul>
+
+    </p>
+
+    <h3>
+        Una funcion que consegui por internet para poner los numeros con sus puntos y comas.
+    </h3>
+    <pre>
+        function FormatNumber(number) {
+            number = number.toFixed(2)
+            number += '';
+            var x = number.split('.');
+            var x1 = x[0];
+            var x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1,$2');
+            }
+            return (x1 + x2);
+        }
+          
+    </pre>
+
+</body>
+
+</html>
